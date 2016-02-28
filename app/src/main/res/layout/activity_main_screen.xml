@@ -9,6 +9,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.calendarquickstart.MainScreen">
 
+
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,42 +28,32 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_column="0" />
-
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Meetup"
+                android:id="@+id/CreateMeetup_button"
+                android:layout_column="0" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="0">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Create Meetup"
-                    android:id="@+id/CreateMeetup_button"
-                    android:layout_column="0"
-                    android:layout_weight="1"/>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Check Meetup"
-                    android:id="@+id/CheckMeetup_button"
-                    android:layout_column="0"
-                    android:layout_weight="1"/>
-            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Meetup"
+                android:id="@+id/CheckMeetup_button"
+                android:layout_column="0" />
         </TableRow>
     </TableLayout>
+
 
 </RelativeLayout>
